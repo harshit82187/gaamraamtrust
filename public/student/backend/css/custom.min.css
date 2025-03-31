@@ -1,0 +1,399 @@
+/*# sourceMappingURL=custom.min.css.map */
+
+.user-list-card {
+	margin-top: 80px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.user-list-card2 {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+.property-facility li {
+	background-color: var(--vz-purple) !important;
+}
+
+/* 14/01/2025 */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 34px;
+	height: 20px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: .4s;
+	border-radius: 34px;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	transition: .4s;
+}
+
+input:checked+.slider {
+	background-color: #4CAF50;
+}
+
+input:checked+.slider:before {
+	transform: translateX(14px);
+}
+
+
+/* 16-01-2025 */
+#dataTable tbody tr:nth-child(odd):hover {
+	background-color: #e9ecef;
+}
+
+#dataTable tbody tr:nth-child(even):hover {
+	background-color: #f8d7da;
+}
+
+.count-circle {
+	display: inline-block;
+	background-color: #032444;
+	/* Blue background color */
+	color: white;
+	/* White text color */
+	font-size: 12px;
+	/* Adjust size as needed */
+	font-weight: bold;
+	width: 24px;
+	/* Circle width */
+	height: 24px;
+	/* Circle height */
+	line-height: 24px;
+	/* Align text vertically */
+	border-radius: 50%;
+	/* Make it a perfect circle */
+	text-align: center;
+	/* Center text horizontally */
+	margin-left: 10px;
+	/* Add spacing from the heading */
+	position: absolute;
+	top: 18px;
+}
+
+/* 20-01-2025 @harshit vendor sidebar  */
+.nav-link.active-option {
+	background-color: rgba(0, 123, 255, 0.1);
+	/* Transparent blue background */
+	color: #007bff;
+	/* Adjust text color for better visibility */
+	border-radius: 4px;
+	/* Optional: rounded corners for better aesthetics */
+}
+
+.nav-link.active-option:hover {
+	background-color: rgba(0, 123, 255, 0.2);
+	/* Slightly darker on hover */
+	color: #0056b3;
+	/* Darker text color on hover */
+}
+
+/* 01-03-2025 @harshit */
+.customTextarea {
+	/* width: 1064px;    */
+	height: 87px;
+	resize: none;
+}
+
+
+/* 26-03-2025 @arun test seriers */
+.quiz-header {
+	background: #2fbfa7;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.question-area,
+.quiz-sidebar {
+	width: 100%;
+	padding: 10px;
+}
+
+.question-box {
+	border: 2px solid #ccc;
+	padding: 20px;
+	border-radius: 8px;
+	background: white;
+}
+
+.quiz-option {
+	margin-top: 10px;
+}
+
+.label-option {
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+}
+
+.label-option input {
+	margin-right: 10px;
+}
+
+.status-box {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.status-tick {
+	display: flex;
+	align-items: center;
+}
+
+.status-tick span {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin-right: 8px;
+}
+
+.answered {
+	background: green;
+}
+
+.not-visited {
+	background: gray;
+}
+
+.not-answered {
+	background: red;
+}
+
+.marked {
+	background: purple;
+}
+
+.buttons {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.btn {
+	padding: 10px;
+	cursor: pointer;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+.btn-secondary {
+	background: white;
+	border: 1px solid #000;
+}
+
+.questions-nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+
+.questions-nav button {
+	width: 40px;
+	height: 40px;
+	border: 1px solid #000;
+	background: gray;
+	cursor: pointer;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+	background: white;
+	margin: 10% auto;
+	padding: 20px;
+	width: 90%;
+	max-width: 400px;
+	text-align: center;
+	border-radius: 8px;
+}
+
+.label-option {
+	padding: 10px;
+	display: flex;
+	/* align-items: center; */
+	margin: 10px 0;
+	border-radius: 30px;
+	border: 1px solid #b9b5b5;
+}
+
+.quiz-option {
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: 3fr 3fr;
+	gap: 10px;
+
+}
+
+.quiz-sidebar,
+.question-area {
+	margin: 25px 0;
+}
+
+.qus_save_btn:hover {
+	color: #4b38b3;
+	background-color: #fff;
+	border: 1px solid #4b38b3;
+}
+
+.qus_submit_btn:hover {
+	color: #45CB85;
+	background-color: #fff;
+	border: 1px solid #45CB85;
+}
+
+.question-area .question-box p {
+	font-size: 16px;
+	color: #777;
+	font-weight: 400 !important;
+}
+
+.questions_timer {
+	margin-top: 40px;
+	text-align: end;
+	background-color: #f5f5f5;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+}
+
+.questions_timer span {
+	font-size: 16px;
+	margin-left: 15px;
+	color: #111;
+	font-weight: 500;
+}
+
+.questions_timer i {
+	font-size: 20px;
+	animation-name: twist_time;
+	animation-duration: 1s;
+}
+
+
+.icon-holder {
+	width: 40px;
+}
+.icon-holder div {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	}
+
+.icon-holder svg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: visible;
+
+
+}
+
+.icon-holder #button-top {
+	animation: button-top 2s ease 0s infinite;
+}
+
+.icon-holder #big-hand {
+	transform-origin: 50% 55.85%;
+	animation: big-hand 2s cubic-bezier(.93, .3, .3, .93) .25s infinite;
+}
+
+@keyframes button-top {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	2% {
+		transform: translate(0, -8px);
+	}
+
+	5% {
+		transform: translate(0px, 15px);
+	}
+
+	8% {
+		transform: translate(0, -5px);
+	}
+
+	10% {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes big-hand {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(360deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+@media (min-width: 768px) {
+	.container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.question-area {
+		flex: 3;
+	}
+
+	.quiz-sidebar {
+		flex: 1;
+		background: #f5f5f5;
+		padding: 20px;
+	}
+}
